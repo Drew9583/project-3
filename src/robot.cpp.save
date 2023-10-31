@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdlib.h>  
 #include <ros/ros.h>
 #include <geometry_msgs/Twist.h>
 #include <kobuki_msgs/BumperEvent.h>
@@ -190,29 +190,9 @@ int main(int argc, char **argv) {
 		} 
 
 		else if (option == 'q'){	//greetings
-			//system("rosrun sound_play soundplay_node.py");
+			system("rosrun sound_play soundplay_node.p
 			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/hello.wav");
-			//system("rosnode kill /sound_play");
-		}
-
-		else if (option == 'w'){	//tunnels
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/tunnels.wav");
-		}
-
-		else if (option == 'e'){	//move out the way
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/move.wav");
-		}
-
-		else if (option == 'r'){	//take us to 2
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/up.wav");
-		}
-
-		else if (option == 't'){	//take us to B
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/down.wav");
-		}
-
-		else if (option == 'y'){	//thanks
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/thanks.wav");
+			system("rosnode kill /sound_play");
 		}
 
 		else if((wallDistance < 1.5) && (rightDistance > leftDistance) && (rightDistance > wallDistance)){ // Avoid asymmetric obstances by turning right
