@@ -173,28 +173,27 @@ int main(int argc, char **argv) {
 
 	char option = ' ';
 	while (ros::ok()){
-		
+
 		option = nonBlockingGetch();
 		cmd_vel_msg.linear.x = 0.0;
 		cmd_vel_msg.angular.z = 0.0;
 
-		ROS_INFO("I am running\n");
-
-		if(option == 'h'){      // drive forward
-			ROS_INFO("\n\n\n\nEnabling Manual Drive Mode\n\n\n\n");
-			system("roslaunch project-3 keyboard_teleop.launch");
-			system("clear");
-			ROS_INFO("\nDisabled Manual Drive Mode\n");
-
-			//system("rosnode kill /turtlebot_teleop_keyboard");
-		} 
-
-		else if (option == 'q'){	//greetings
-			system("rosrun sound_play soundplay_node.py");			
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/hello.wav");
-			system("rosnode kill /sound_play");
+		if(option == 'i'){      // drive forward
+			cmd_vel_msg.linear.x = SPEED;
+			cmd_vel_msg.angular.z = 0.0;
 		}
-
+		else if(option == 'k'){ // drive backwards
+			cmd_vel_msg.linear.x = -SPEED;
+			cmd_vel_msg.angular.z = 0.0;
+		}
+		else if(option == 'j'){ // turn left
+			cmd_vel_msg.linear.x = 0.0;
+			cmd_vel_msg.angular.z = SPEED;
+		}
+		else if(option == 'l'){ // turn right
+			cmd_vel_msg.linear.x = 0.0;
+			cmd_vel_msg.angular.z = -SPEED;
+		}
 		else if((wallDistance < 1.5) && (rightDistance > leftDistance) && (rightDistance > wallDistance)){ // Avoid asymmetric obstances by turning right
 			while(wallDistance < 1.5){
 				//ROS_INFO("I TURNED 5 DEGRESS RIGHT");
