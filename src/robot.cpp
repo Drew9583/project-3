@@ -218,7 +218,19 @@ int main(int argc, char **argv) {
 		else if (option == 'u'){	//thanks
 			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/thanks.wav");
 		}
+		
+		else if (option == 'a'){	//goToDreamer
+			system("python3 goToDreamer.py");
+		}
 
+		else if (option == 's'){	//goToOmar
+			system("python3 goToOmar.py");
+		}
+		
+		else if (option == 'd'){	//goToLove
+			system("python3 goToLove.py");
+		}
+/*
 		else if((wallDistance < 1.5) && (rightDistance > leftDistance) && (rightDistance > wallDistance)){ // Avoid asymmetric obstances by turning right
 			while(wallDistance < 1.5){
 				//ROS_INFO("I TURNED 5 DEGRESS RIGHT");
@@ -263,6 +275,7 @@ int main(int argc, char **argv) {
 				loop_rate.sleep();
 			}
 		}
+
 		else if ((odometer - lastTurn) > 1.0){ // turn randomly +-15 degress every 1ft of forward movement
 			double turnRad = (rand() % 16) * (3.14 / 180); // random 1-15 degrees in radians
 			double turnDir = (rand() % 2); // random direction
@@ -293,7 +306,7 @@ int main(int argc, char **argv) {
 			cmd_vel_msg.angular.z = 0.0;
 			//ROS_INFO("I am Moving");
 		}
-
+*/
 		cmd_vel_pub.publish(cmd_vel_msg); // publish movement commands
 		ros::spinOnce(); // processes pending ROS messages and/or callbacks
 		loop_rate.sleep();
