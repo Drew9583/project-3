@@ -195,23 +195,27 @@ int main(int argc, char **argv) {
 			//system("rosnode kill /sound_play");
 		}
 
-		else if (option == 'w'){	//tunnels
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/tunnels.wav");
+		else if (option == 'w'){	//wilhelm
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/wilhelm.wav");
 		}
 
 		else if (option == 'e'){	//move out the way
 			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/move.wav");
 		}
 
-		else if (option == 'r'){	//take us to 2
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/up.wav");
+		else if (option == 'r'){	//dreamer
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/dreamer.wav");
 		}
 
-		else if (option == 't'){	//take us to B
-			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/down.wav");
+		else if (option == 't'){	//omar
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/omar.wav");
 		}
 
-		else if (option == 'y'){	//thanks
+		else if (option == 'y'){	//love
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/love.wav");
+		}
+
+		else if (option == 'u'){	//thanks
 			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/thanks.wav");
 		}
 
