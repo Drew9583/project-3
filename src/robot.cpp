@@ -221,16 +221,19 @@ int main(int argc, char **argv) {
 		
 		else if (option == 'a'){	//goToDreamer
 			system("python /home/robot/catkin_ws/src/project-3/scripts/goToDreamer.py");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/dreamer.wav");
 		}
 
 		else if (option == 's'){	//goToOmar
 			system("python /home/robot/catkin_ws/src/project-3/scripts/goToOmar.py");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/omar.wav");
 		}
 		
 		else if (option == 'd'){	//goToLove
 			system("python /home/robot/catkin_ws/src/project-3/scripts/goToLove.py");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/love.wav");
 		}
-/*
+
 		else if((wallDistance < 1.5) && (rightDistance > leftDistance) && (rightDistance > wallDistance)){ // Avoid asymmetric obstances by turning right
 			while(wallDistance < 1.5){
 				//ROS_INFO("I TURNED 5 DEGRESS RIGHT");
@@ -275,7 +278,7 @@ int main(int argc, char **argv) {
 				loop_rate.sleep();
 			}
 		}
-
+/*
 		else if ((odometer - lastTurn) > 1.0){ // turn randomly +-15 degress every 1ft of forward movement
 			double turnRad = (rand() % 16) * (3.14 / 180); // random 1-15 degrees in radians
 			double turnDir = (rand() % 2); // random direction
@@ -301,12 +304,13 @@ int main(int argc, char **argv) {
 			}
 			lastTurn = odometer;
 		}
+*/
 		else if (!bumperHit){ // If no other criteria are met, continue moving forward
 		    	cmd_vel_msg.linear.x = SPEED;
 			cmd_vel_msg.angular.z = 0.0;
 			//ROS_INFO("I am Moving");
 		}
-*/
+
 		cmd_vel_pub.publish(cmd_vel_msg); // publish movement commands
 		ros::spinOnce(); // processes pending ROS messages and/or callbacks
 		loop_rate.sleep();
