@@ -220,15 +220,15 @@ int main(int argc, char **argv) {
 		}
 		
 		else if (option == 'a'){	//goToDreamer
-			system("python3 goToDreamer.py");
+			system("python /home/robot/catkin_ws/src/project-3/scripts/goToDreamer.py");
 		}
 
 		else if (option == 's'){	//goToOmar
-			system("python3 goToOmar.py");
+			system("python /home/robot/catkin_ws/src/project-3/scripts/goToOmar.py");
 		}
 		
 		else if (option == 'd'){	//goToLove
-			system("python3 goToLove.py");
+			system("python /home/robot/catkin_ws/src/project-3/scripts/goToLove.py");
 		}
 /*
 		else if((wallDistance < 1.5) && (rightDistance > leftDistance) && (rightDistance > wallDistance)){ // Avoid asymmetric obstances by turning right

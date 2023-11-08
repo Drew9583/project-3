@@ -28,9 +28,12 @@
   </node> 
  
   <!-- Added stuff starts here -->
-  <!-- <node pkg="project-3" type="turtlebot_teleop_key.py" name="teleop" output="screen"/> -->
+  <node pkg="project-3" type="turtlebot_teleop_key.py" name="teleop" output="screen"/> -->
+  <node pkg="project-3" type="goToDreamer.py" name="dreamer" output="screen"/> -->
+  <node pkg="project-3" type="goToLove.py" name="love" output="screen"/> -->
+  <node pkg="project-3" type="goToOmar.py" name="omar" output="screen"/> -->
 
-  <!-- From gmapping_demo.launch -->
+  <!-- From gmapping_demo.launch
   <arg name="scan_topic" default="scan"/>
   <arg name="base_frame" default="base_footprint"/>
   <arg name="odom_frame" default="odom"/>
@@ -69,6 +72,7 @@
     <param name="lasamplestep" value="0.005"/>
     <remap from="scan" to="$(arg scan_topic)"/>
   </node>
+							-- >
 
   <!-- From turtlebot_rviz_launchers/launch/view_navigation.launch-->
 <!-- "camera" should uniquely identify the device. All topics are pushed down
@@ -131,7 +135,9 @@
       <remap from="$(arg camera)/image" to="$(arg camera)/$(arg depth)/image_raw"/>
       <remap from="$(arg camera)/scan" to="$(arg scan_topic)"/>
     </node>
-  </group>  <!-- node name="rviz" pkg="rviz" type="rviz" args="-d $(find project-3)/launch/navigation.rviz"/ -->
+  </group>  
+
+	<!-- node name="rviz" pkg="rviz" type="rviz" args="-d $(find project-3)/launch/navigation.rviz"/ -->
 
   <arg name="device" default="" />
   <arg name="loop_rate" default="100" />
