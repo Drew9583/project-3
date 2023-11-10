@@ -1,4 +1,0 @@
-<launch>
-  <node pkg="project-3" type="goToLove.py" name="love"  output="screen">
-  </node>
-</launch>
