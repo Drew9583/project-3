@@ -220,17 +220,17 @@ int main(int argc, char **argv) {
 		}
 		
 		else if (option == 'a'){	//goToDreamer
-			system("python /home/robot/catkin_ws/src/project-3/scripts/goToDreamer.py");
+			system("python /home/maha0025/catkin_ws/src/project-3/scripts/goToDreamer.py");
 			//system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/dreamer.wav");
 		}
 
 		else if (option == 's'){	//goToOmar
-			system("python /home/robot/catkin_ws/src/project-3/scripts/goToOmar.py");
+			system("python /home/maha0025/catkin_ws/src/project-3/scripts/goToOmar.py");
 			//system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/omar.wav");
 		}
 		
 		else if (option == 'd'){	//goToLove
-			system("python /home/robot/catkin_ws/src/project-3/scripts/goToLove.py");
+			system("python /home/maha0025/catkin_ws/src/project-3/scripts/goToLove.py");
 			//system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/love.wav");
 		}
 		
