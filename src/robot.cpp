@@ -191,47 +191,47 @@ int main(int argc, char **argv) {
 
 		else if (option == 'q'){	//greetings
 			//system("rosrun sound_play soundplay_node.py");
-			system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/hello.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/hello.wav");
 			//system("rosnode kill /sound_play");
 		}
 
 		else if (option == 'w'){	//wilhelm
-			system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/wilhelm.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/wilhelm.wav");
 		}
 
 		else if (option == 'e'){	//move out the way
-			system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/move.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/move.wav");
 		}
 
 		else if (option == 'r'){	//dreamer
-			system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/dreamer.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/dreamer.wav");
 		}
 
 		else if (option == 't'){	//omar
-			system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/omar.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/omar.wav");
 		}
 
 		else if (option == 'y'){	//love
-			system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/love.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/love.wav");
 		}
 
 		else if (option == 'u'){	//thanks
-			system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/thanks.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/thanks.wav");
 		}
 		
 		else if (option == 'a'){	//goToDreamer
 			system("python /home/maha0025/catkin_ws/src/project-3/scripts/goToDreamer.py");
-			//system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/dreamer.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/dreamer.wav");
 		}
 
 		else if (option == 's'){	//goToOmar
 			system("python /home/maha0025/catkin_ws/src/project-3/scripts/goToOmar.py");
-			//system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/omar.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/omar.wav");
 		}
 		
 		else if (option == 'd'){	//goToLove
 			system("python /home/maha0025/catkin_ws/src/project-3/scripts/goToLove.py");
-			//system("rosrun sound_play play.py /home/maha0025/catkin_ws/src/audio_common/sound_play/sounds/love.wav");
+			system("rosrun sound_play play.py /home/lumr0000/catkin_ws/src/audio_common/sound_play/sounds/love.wav");
 		}
 		
 		/*
