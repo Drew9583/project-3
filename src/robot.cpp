@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include <termios.h>
+#include <ros/ros.h>
+#include <stdio.h>
+#include <fcntl.h>
 
 	// function to get keyboard input from a user without waiting for an input to occur
 	// function provided by ChatGPT https://chat.openai.com/share/c5e0891f-7488-41d0-9792-0faa99b4d32b
