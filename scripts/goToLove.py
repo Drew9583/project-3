@@ -80,8 +80,8 @@ if __name__ == '__main__':
 		navigator = GoToPose()
 
 		# Customize the following values so they are appropriate for your location
-		position = {'x': 1.628, 'y' : 5.868}
-		quaternion = {'r1' : 0.000, 'r2' : 0.000, 'r3' : 0.982, 'r4' : 0.187}
+		position = {'x': 1.868, 'y' : 5.534}
+		quaternion = {'r1' : 0.000, 'r2' : 0.000, 'r3' : 0.987, 'r4' : 0.160}
 
 		rospy.loginfo("Go to (%s, %s) pose", position['x'], position['y'])
 		success = navigator.goto(position, quaternion)
