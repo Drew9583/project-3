@@ -32,7 +32,7 @@ char nonBlockingGetch() {
 int main(int argc, char **argv) {   
 
 	char option = ' ';
-	while (ros::ok()){
+	while (true){
 		
 		option = nonBlockingGetch();
 
