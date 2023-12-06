@@ -107,7 +107,7 @@
     </node>
   </group>
 
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find project-3)/map/b4v2.yaml" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find project-3)/map/b4.yaml" />
 
   <!-- Localization -->
   <arg name="initial_pose_x" default="0.0"/>
